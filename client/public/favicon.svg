@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="brandGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f97316"/>
+      <stop offset="50%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#c2410c"/>
+    </linearGradient>
+    <linearGradient id="cyanGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#bgGrad)" stroke="#334155" stroke-width="1.5"/>
+  <rect x="14" y="8" width="36" height="48" rx="7" fill="url(#screenGrad)" stroke="#475569" stroke-width="1.2"/>
+  <rect x="26" y="11" width="12" height="2.5" rx="1.2" fill="#64748b"/>
+  <circle cx="23" cy="12.2" r="1" fill="#38bdf8"/>
+
+  <path d="M 21 40 L 21 21 L 27.5 32 L 32 25 L 36.5 32 L 43 21 L 43 40" 
+        fill="none" 
+        stroke="url(#brandGrad)" 
+        stroke-width="3.6" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"
+        filter="url(#glow)"/>
+
+  <path d="M 44 11 L 45.2 14.5 L 48.7 15.7 L 45.2 16.9 L 44 20.4 L 42.8 16.9 L 39.3 15.7 L 42.8 14.5 Z" fill="url(#cyanGrad)"/>
+  <rect x="27" y="51" width="10" height="2" rx="1" fill="#94a3b8" opacity="0.8"/>
+</svg>

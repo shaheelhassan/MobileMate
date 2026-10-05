@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-800 font-sans antialiased;
+  }
+}
+
+.shadow-glow {
+  box-shadow: 0 4px 20px -2px rgba(249, 115, 22, 0.35);
+}
+
+.shadow-glow-cyan {
+  box-shadow: 0 4px 20px -2px rgba(56, 189, 248, 0.35);
+}
